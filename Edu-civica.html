@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educazione civica</title>
+    <style>
+        body {
+            font-style: italic;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #004080;
+        }
+        .content {
+            padding: 2rem;
+            display: flex; /* Utilizza flexbox */
+            justify-content: space-around; /* Allinea i div uno accanto all'altro con spazio uniforme */
+            align-items: flex-start; /* Allinea i div all'inizio */
+            flex-wrap: wrap; /* Permette il wrap dei div quando non c'è abbastanza spazio */
+        }
+        .section {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .flex-container {
+			  flex-grow: 1; /* Flessibilità per far espandere il flex-container */
+			  display: flex;
+			  justify-content: center; /* Centra orizzontalmente */
+			  align-items: center;    /* Centra verticalmente */
+			  height: 100vh;          /* Imposta l'altezza del contenitore per riempire l'intera finestra */
+			  gap: 40px;              /* Distanza tra i due div */
+			}
+			.flex-item {
+		  
+			  display: flex;
+			  justify-content: center; /* Centra orizzontalmente */
+			  align-items: center;    /* Centra verticalmente */
+			  width: 800px;           /* Imposta una larghezza specifica */
+			  height: 600px;          /* Imposta un'altezza specifica */
+			  border: 1px solid black; /* Bordo per visualizzare i contorni del div */
+			  text-align: center;     /* Centra il testo */
+			  transition: transform 0.3s; /* Aggiungi transizioni */
+			}
+			.flex-item:hover {
+			  transform: scale(1.1); /* Ingrandisce il flex-item */
+			  background-color: blue;
+			}
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Educazione civica</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Materie-umanistiche.html">Materie umanistiche</a>
+        <a href="Materie-informatiche.html">Materie informstiche</a>
+        <a href="Edu-civica.html">Educazione civica</a>
+        <a href="PCTO.html">PCTO</a>
+    </nav>
+    <div class="section">
+        <h2>Educazione civica</h2>
+        <p>Benvenuti nel mio sito personale. Usa il menu per navigare tra le sezioni.</p>
+    </div>
+    <div class="content">
+        <div class="flex-container">
+            <div class="flex-item" style=" background-image: url('guerragiusta.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; text-align: center; color: rgb(217, 255, 0);">
+                <div style="background-color: rgb(255, 255, 255);">   
+                <a href="fakenews.html" target="_blank"style="font-size: 20px;">La manipolazione dell’informazione e la propaganda</a><br>
+                </div>
+            </div>
+            
+            <div class="flex-item" style=" background-image: url('guerrainformatica.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; text-align: center; color: rgb(217, 255, 0);">
+                <div style="background-color: rgb(255, 255, 255);">
+                <a href="next-gen.html" target="_blank" style="font-size: 20px;">La guerra al tempo della Next-Gen</a><br>
+                </div>
+            </div>
+            </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Il Mio Sito Personale</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Sito Personale</title>
+    <style>
+        body {
+            font-style: italic;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #004080;
+        }
+        .content {
+            padding: 2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .section {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .description, .interests {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: calc(50% - 1rem);
+            max-width: 300px;
+        }
+        .description img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .interests {
+            margin-left: 2rem;
+        }
+        .interests ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .interests li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .interests img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 1rem;
+        }
+        .interests .interest-content {
+            display: flex;
+            flex-direction: column;
+        }
+        .interests .interest-content h4 {
+            margin: 0 0 0.5rem 0;
+        }
+        .interests .interest-content p {
+            margin: 0;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Il Mio Sito Personale</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Materie-umanistiche.html">Materie umanistiche</a>
+        <a href="Materie-informatiche.html">Materie informatiche</a>
+        <a href="Edu-civica.html">Educazione civica</a>
+        <a href="PCTO.html">PCTO</a>
+    </nav>
+    <div class="section">
+        <h2>Benvenuti!</h2>
+        <p>Benvenuti nel mio sito personale. Usa il menu per navigare tra le sezioni.</p>
+    </div>
+    <div class="content">
+        <div class="description">
+            <img src="me.jpg" alt="La mia immagine">
+            <h3>Descrizione</h3>
+            <p>Sono Simone, uno studente dell'istituto Marconi Pieralisi indirizzo informatica. Sono appassionato di tecnologia e informatica, ho esperienza in vari linguaggi di programmazione e amo creare soluzioni software. Sono nato nel 2005 in Polonia.</p>
+        </div>
+        <div class="interests">
+            <h3>Interessi</h3>
+            <ul>
+                <li>
+                    <img src="programmazione.jpg" alt="Programmazione">
+                    <div class="interest-content">
+                        <h4>Programmazione</h4>
+                        <p>Amo creare software e risolvere problemi complessi con codice.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="musica.jpg" alt="Musica">
+                    <div class="interest-content">
+                        <h4>Musica</h4>
+                        <p>Mi piace ascoltare musica di vari generi.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="filmserietv.webp" alt="Film e serie TV">
+                    <div class="interest-content">
+                        <h4>Film e serie TV</h4>
+                        <p>Sono appassionato di cinema e serie TV, specialmente di fantascienza.</p>
+                    </div>                </li>
+                <li>
+                    <img src="magia.jpg" alt="Magia">
+                    <div class="interest-content">
+                        <h4>Magia</h4>
+                        <p>Mi diverto a eseguire trucchi di magia e stupire gli amici.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="giochidicarte.webp" alt="Giochi di carte">
+                    <div class="interest-content">
+                        <h4>Giochi di carte</h4>
+                        <p>Adoro giocare a carte, soprattutto a Yu-Gi-Oh</p>
+                    </div>                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Il Mio Sito Personale</p>
+    </footer>
+</body>
+</html>
